@@ -1,11 +1,10 @@
 package asteroidsGame;
 
-
+import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.geometry.Insets;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
@@ -35,29 +34,28 @@ public class MainMenu {
        int width = (int) Screen.getPrimary().getBounds().getWidth();
        int height = (int) Screen.getPrimary().getBounds().getHeight();
 
-
-       // create a stack pane
-       Pane r = new Pane();
-       Pane playGamePane = new Pane();
-       Pane highScoresPane = new Pane();
+        // create panes
+        Pane mainPagePane = new Pane();
+        Pane playGamePane = new Pane();
+        Pane highScoresPane = new Pane();
        Pane InputnamePane=new Pane();
        Pane ControlsPane=new Pane();
-       Button backToPause = new Button("Back to Main Menu");
-       backToPause.setOnAction(e -> primaryStage.setScene(mainPageScene));
 
+        //create the button for backToPause and set click on action
+        Button backToPause = new Button("Back to Main Menu");
+        backToPause.setOnAction(e -> primaryStage.setScene(mainPageScene));
 
-       playGamePane.getChildren().addAll(new Label("playGame"), backToPause);
-       highScoresPane.getChildren().add(new Label("highScores"));
        InputnamePane.getChildren().add(new Label("Player"));
        ControlsPane.getChildren().add(new Label("Controls"));
-r.setStyle("-fx-background-color: black");
+       mainPagePane.setStyle("-fx-background-color: black");
        VBox OpeningPage = new VBox();
        OpeningPage.setSpacing(10);
-      // OpeningPage.setStyle("-fx-background-color: black");
-// create a label
-       Label gameName = new Label("ASTROIDS");
-       gameName.setFont(Font.font("Lucida Sans Unicode", FontWeight.BOLD, 150));
-       gameName.setTextFill(Color.WHITE);
+        // create a label for ASTROIDS
+        Label gameName = new Label("ASTROIDS");
+
+        //set font type and color for game name ASTROIDS
+        gameName.setFont(Font.font("Lucida Sans Unicode", FontWeight.BOLD, 150));
+        gameName.setTextFill(Color.WHITE);
 
 // create buttons
        Button[] buttons = generateButtons(mainPageScene);
@@ -78,7 +76,7 @@ r.setStyle("-fx-background-color: black");
        }
        OpeningPage.setAlignment(Pos.CENTER);
 // add the VBox to the root node and create the scene
-       r.getChildren().add(OpeningPage);
+       mainPagePane.getChildren().add(OpeningPage);
        //This is to center the container box in the middle of the Pane.
        //This is not resizable
 //       OpeningPage.layoutBoundsProperty().addListener((obs, oldVal, newVal) -> {
@@ -86,24 +84,24 @@ r.setStyle("-fx-background-color: black");
 //           OpeningPage.setLayoutY((r.getHeight() - newVal.getHeight()) / 2);
 //       });
        OpeningPage.layoutBoundsProperty().addListener((obs, oldVal, newVal) -> {
-           double x = (r.getWidth() - newVal.getWidth()) / 2;
-           double y = (r.getHeight() - newVal.getHeight()) / 2;
+           double x = (mainPagePane.getWidth() - newVal.getWidth()) / 2;
+           double y = (mainPagePane.getHeight() - newVal.getHeight()) / 2;
            OpeningPage.relocate(x, y);
        });
 //This is for it to be resizable
-       r.widthProperty().addListener((obs, oldVal, newVal) -> {
-           double x = (r.getWidth() - OpeningPage.getLayoutBounds().getWidth()) / 2;
-           double y = (r.getHeight() - OpeningPage.getLayoutBounds().getHeight()) / 2;
+       mainPagePane.widthProperty().addListener((obs, oldVal, newVal) -> {
+           double x = (mainPagePane.getWidth() - OpeningPage.getLayoutBounds().getWidth()) / 2;
+           double y = (mainPagePane.getHeight() - OpeningPage.getLayoutBounds().getHeight()) / 2;
            OpeningPage.relocate(x, y);
        });
        //This is for resizable to get height
-       r.heightProperty().addListener((obs, oldVal, newVal) -> {
-           double x = (r.getWidth() - OpeningPage.getLayoutBounds().getWidth()) / 2;
-           double y = (r.getHeight() - OpeningPage.getLayoutBounds().getHeight()) / 2;
+       mainPagePane.heightProperty().addListener((obs, oldVal, newVal) -> {
+           double x = (mainPagePane.getWidth() - OpeningPage.getLayoutBounds().getWidth()) / 2;
+           double y = (mainPagePane.getHeight() - OpeningPage.getLayoutBounds().getHeight()) / 2;
            OpeningPage.relocate(x, y);
        });
 
-       mainPageScene = new Scene(r, width, height);
+       mainPageScene = new Scene(mainPagePane, width, height);
 
 
         // Create the VBox layout container just to center everything
@@ -203,14 +201,61 @@ r.setStyle("-fx-background-color: black");
            primaryStage.setScene(leaderboardScene);
        });
 
-// set the scene
+        mainPagePane.getChildren().addAll(buttons);
+
+        // set the scene
         primaryStage.setScene(mainPageScene);
+
+        centerElements(width, gameName, playGame, highScores);
+
+        playGame.setLayoutY(height / 2f + 100);
+        highScores.setLayoutY(height / 2f + 180);
+        gameName.setLayoutY(height / 2f - 100);
+
+        keepElementsCenter(gameName, playGame, highScores);
+
         primaryStage.show();
     }
 
+    //function to get width and height of label and set the label position in the centre when resize the window
+    private void keepElementsCenter(Label gameName, Button playGame, Button highScores) {
+        mainPageScene.widthProperty().addListener((ObservableValue<? extends Number> observable, Number oldValue, Number newValue) -> {
+            playGame.setLayoutX(newValue.doubleValue() / 2 - (playGame.widthProperty().getValue() / 2));
+            highScores.setLayoutX(newValue.doubleValue() / 2 - (highScores.widthProperty().getValue() / 2));
+            gameName.setLayoutX(newValue.doubleValue() / 2 - (gameName.widthProperty().getValue() / 2));
+        });
+        mainPageScene.heightProperty().addListener((ObservableValue<? extends Number> observable, Number oldValue, Number newValue) -> {
+            playGame.setLayoutY(newValue.doubleValue() / 2 - (playGame.heightProperty().getValue() / 2 - 100));
+            highScores.setLayoutY(newValue.doubleValue() / 2 - (highScores.heightProperty().getValue() / 2 - 180));
+            gameName.setLayoutY(newValue.doubleValue() / 2 - (gameName.heightProperty().getValue() / 2 + 100));
+        });
+    }
 
+    //function to get width and height of label and set the label position in the centre when open the window
+    private static void centerElements(int width, Label gameName, Button playGame, Button highScores) {
+        gameName.widthProperty().addListener(new ChangeListener(){
+            @Override public void changed(ObservableValue o,Object oldVal,
+                                          Object newVal){
+                gameName.setLayoutX(width / 2d - (double) newVal/2d);
+            }
+        });
 
+        playGame.widthProperty().addListener(new ChangeListener(){
+            @Override public void changed(ObservableValue o,Object oldVal,
+                                          Object newVal){
+                playGame.setLayoutX(width / 2d - (double) newVal/2d);
+            }
+        });
 
+        highScores.widthProperty().addListener(new ChangeListener(){
+            @Override public void changed(ObservableValue o,Object oldVal,
+                                          Object newVal){
+                highScores.setLayoutX(width / 2d - (double) newVal/2d);
+            }
+        });
+    }
+
+    // create playGame and highScores button
     private Button[] generateButtons(Scene sc) {
         // create a button
         Button playGame = new Button("Play Game");
