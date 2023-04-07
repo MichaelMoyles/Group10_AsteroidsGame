@@ -1,26 +1,22 @@
 package asteroidsGame;
 
+import javafx.animation.AnimationTimer;
 import javafx.application.Application;
-import javafx.beans.value.ObservableValue;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.*;
-import javafx.geometry.Pos;
-import javafx.scene.paint.Color;
-import javafx.geometry.Insets;
-import javafx.geometry.Rectangle2D;
-//import javafx.scene.shape.Polygon;
-import javafx.scene.shape.Polygon;
-import javafx.stage.Stage;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.Priority;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Screen;
-import javafx.animation.AnimationTimer;
-//import javafx.scene.control.ListView;
+import javafx.stage.Stage;
 
-//import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,7 +56,7 @@ public class Main extends Application {
         //Game Scene
         Button pause = new Button("Pause");
         pause.setStyle("-fx-background-color: white;");
-         //So we are setting it to have a black colour
+        //So we are setting it to have a black colour
         Pane gamePane = new Pane();
         gamePane.setStyle("-fx-background-color: black;");
         // Should Set the position of the pause button!
@@ -82,22 +78,22 @@ public class Main extends Application {
         pause.setMinSize(Button.USE_PREF_SIZE, Button.USE_PREF_SIZE);
         pauseHBox.getChildren().addAll(spacer, pause);
         pause.setOnAction(e -> primaryStage.setScene(pauseScene));
-        pauseScene= new Scene(pauseHBox, stageWidth, stageHeight);
+        pauseScene = new Scene(pauseHBox, stageWidth, stageHeight);
         // we create int positions X and Y that we will use to create our ship.
         // when we create a class for ship we call in an x and y position,
         // by default these positions are going to be dead in the center.
 
         int playerX, playerY;
-        playerX = (int)(stageWidth/2);
-        playerY = (int)(stageHeight/2);
+        playerX = (int) (stageWidth / 2);
+        playerY = (int) (stageHeight / 2);
 
         // Instantiating a Player called player that we can manipulate and adding it to the game scene.
-        Player player = new Player(playerX,playerY);
+        Player player = new Player(playerX, playerY);
         gamePane.getChildren().add(player.getCharacter());
 
         int alienX, alienY;
-        alienX = (int)(stageWidth/4);
-        alienY = (int)(stageHeight/4);
+        alienX = (int) (stageWidth / 4);
+        alienY = (int) (stageHeight / 4);
         BaseShip alien = new Alien(alienX, alienY);
         gamePane.getChildren().add(alien.getCharacter());
 
@@ -114,7 +110,7 @@ public class Main extends Application {
         Button restartGame = new Button("Restart Game");
 
         buttonContainer.setSpacing(10);
-        buttonContainer.getChildren().addAll(pauseSceneTit,mainMenu,resume,closeGame,restartGame);
+        buttonContainer.getChildren().addAll(pauseSceneTit, mainMenu, resume, closeGame, restartGame);
 
         buttonContainer.setAlignment(Pos.CENTER); // Center the VBox
         //Center it within the VBbox
@@ -132,7 +128,7 @@ public class Main extends Application {
 
         resume.setOnAction(e -> primaryStage.setScene(gameScene));
         closeGame.setOnAction(event -> primaryStage.close());
-        restartGame.setOnAction(event ->   {
+        restartGame.setOnAction(event -> {
             player.resetPosition();
             // Remove all bullets from the game window
             for (Bullet bullet : bullets) {
@@ -149,17 +145,9 @@ public class Main extends Application {
         pause.setOnAction(e -> primaryStage.setScene(pauseScene));
 
         //Potential option for scene
-//        GridPane gridPauseScene = new GridPane();
-//        GridPane.setConstraints(pauseSceneTitle, 0, 0);
-//        GridPane.setConstraints(resume,0, 1);
-//        GridPane.setConstraints(mainMenu, 0, 2);
-//        GridPane.setConstraints(closeGame, 0, 3);
-//        GridPane.setConstraints(restartGame, 0, 5);
-     //   gridPauseScene.getChildren().addAll(pauseSceneTitle, resume, mainMenu, closeGame, restartGame);
-      //  pauseScene = new Scene(gridPauseScene, stageWidth, stageHeight);
         pause.setOnAction(e -> primaryStage.setScene(pauseScene));
 
-        mainMenu.setOnAction(e -> new MainMenu(primaryStage,gameScene));
+        mainMenu.setOnAction(e -> new MainMenu(primaryStage, gameScene));
 
         new MainMenu(primaryStage, gameScene);
 
