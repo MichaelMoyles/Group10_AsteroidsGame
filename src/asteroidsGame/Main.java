@@ -43,7 +43,6 @@ public class Main extends Application {
         Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
         stageWidth = screenSize.getWidth();
         stageHeight = screenSize.getHeight();
-        System.out.println(stageWidth/2);
         primaryStage.setWidth(stageWidth);
         primaryStage.setHeight(stageHeight);
 
@@ -135,6 +134,15 @@ public class Main extends Application {
         closeGame.setOnAction(event -> primaryStage.close());
         restartGame.setOnAction(event ->   {
             player.resetPosition();
+            // Remove all bullets from the game window
+            for (Bullet bullet : bullets) {
+                gamePane.getChildren().remove(bullet);
+            }
+
+            // Clear the bullets list
+            bullets.clear();
+
+            // Show the game scene
             primaryStage.setScene(gameScene);
             primaryStage.show();
         });
@@ -152,9 +160,6 @@ public class Main extends Application {
         pause.setOnAction(e -> primaryStage.setScene(pauseScene));
 
         mainMenu.setOnAction(e -> new MainMenu(primaryStage,gameScene));
-
-        //Will have to be changed to main menu when implemented
-//        primaryStage.setScene(gameScene);
 
         new MainMenu(primaryStage, gameScene);
 
