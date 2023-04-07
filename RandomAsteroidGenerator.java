@@ -1,4 +1,4 @@
-package com.example.asteroidgame;
+package asteroidsGame;
 
 import javafx.scene.shape.Polygon;
 import java.util.Random;

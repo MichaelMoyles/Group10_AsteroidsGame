@@ -1,22 +1,21 @@
-package com.example.asteroidgame;
+package asteroidsGame;
 
-import javafx.animation.AnimationTimer;
 import javafx.application.Application;
-import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
-import javafx.scene.shape.Polygon;
-import javafx.stage.Screen;
+import javafx.scene.layout.*;
+import javafx.geometry.Rectangle2D;
 import javafx.stage.Stage;
+import javafx.scene.input.KeyEvent;
+import javafx.stage.Screen;
+import javafx.animation.AnimationTimer;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main extends Application {
+
     Scene gameScene, pauseScene;
     static double stageWidth, stageHeight;
     // Add a list of bullets
@@ -27,10 +26,10 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
 
         primaryStage.setTitle("Group 10 Asteroids Game");
-        primaryStage.setMaximized(true);
         Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
         stageWidth = screenSize.getWidth();
         stageHeight = screenSize.getHeight();
+        System.out.println(stageWidth/2);
         primaryStage.setWidth(stageWidth);
         primaryStage.setHeight(stageHeight);
 
@@ -59,10 +58,19 @@ public class Main extends Application {
         // by default these positions are going to be dead in the center.
 
         int playerX, playerY;
-        playerX = (int) (stageWidth/2);
+        playerX = (int)(stageWidth/2);
         playerY = (int)(stageHeight/2);
 
-        Polygon polygon;
+        // Instantiating a Player called player that we can manipulate and adding it to the game scene.
+        Player player = new Player(playerX,playerY);
+        gamePane.getChildren().add(player.getCharacter());
+
+        int alienX, alienY;
+        alienX = (int)(stageWidth/4);
+        alienY = (int)(stageHeight/4);
+        BaseShip alien = new Alien(alienX, alienY);
+        gamePane.getChildren().add(alien.getCharacter());
+
         // create an instance of Asteroid class
         for (int i = 0; i < 10; i++) {
             double size = Math.random() * 20 + 60; // random size between 60 and 80
@@ -74,13 +82,9 @@ public class Main extends Application {
             asteroids.add(asteroid); // add asteroid to the asteroids array
         }
 
-        // add the asteroid to the game scene
-        // Instantiating a Ship called player that we can manipulate and adding it to the game scene.
-        Ship player = new Ship (playerX,playerY);
-        gamePane.getChildren().add(player.getCharacter());
-
         //Pause Scene
         Label pauseSceneTitle = new Label("Pause Menu");
+
         //Will have to make each of these scenes
         Button resume = new Button("Resume");
         Button mainMenu = new Button("Main Menu");
@@ -99,15 +103,6 @@ public class Main extends Application {
             player.resetPosition();
             primaryStage.setScene(gameScene);
             primaryStage.show();
-            for (int i = 0; i < 10; i++) {
-                double size = Math.random() * 20 + 60; // random size between 60 and 80
-                double speed = Math.random() * 1; // random speed between 1
-                int x = (int) (Math.random() * stageWidth + playerX/2);
-                int y = (int) (Math.random() * stageHeight + playerY/2);
-                Asteroid asteroid = new Asteroid(size, speed, x, y);
-                gamePane.getChildren().add(asteroid.getAsteroid());
-                asteroids.add(asteroid); // add asteroid to the asteroids array
-            }
         });
 
         //Potential option for scene
@@ -123,7 +118,7 @@ public class Main extends Application {
         mainMenu.setOnAction(e -> new MainMenu(primaryStage,gameScene));
 
         //Will have to be changed to main menu when implemented
-        primaryStage.setScene(gameScene);
+//        primaryStage.setScene(gameScene);
 
         new MainMenu(primaryStage, gameScene);
 
@@ -131,18 +126,35 @@ public class Main extends Application {
             @Override
             public void handle(long now) {
                 player.move();
-                asteroids.forEach(Asteroid::move);
-                bullets.forEach(bullet -> {
-                    bullet.move();
-                    asteroids.stream()
-                            .filter(asteroid -> asteroid.collide(bullet))
-                            .forEach(asteroid -> {
-                                asteroid.increaseSpeedOnDestruction();
-                                gamePane.getChildren().removeAll(asteroid.getAsteroid(), bullet);
-                                asteroids.remove(asteroid);
-                                bullets.remove(bullet);
-                            });
+                alien.move();
+
+                asteroids.forEach(asteroid -> {
+                    asteroid.move();
+                    if (player.crash(asteroid)) {
+                        stop();
+                    }
                 });
+
+                // Getting null pointers if we remove the items from the array completely
+                // these are temporary arrays used to detect whether a bullet has collided
+                // with an asteroid
+
+                List<Asteroid> asteroidsToRemove = new ArrayList<>();
+                List<Bullet> bulletsToRemove = new ArrayList<>();
+
+                for (Bullet bullet : bullets) {
+                    bullet.move();
+                    for (Asteroid asteroid : asteroids) {
+                        if (asteroid.collide(bullet)) {
+                            gamePane.getChildren().removeAll(asteroid.getAsteroid(), bullet);
+                            asteroidsToRemove.add(asteroid);
+                            bulletsToRemove.add(bullet);
+                        }
+                    }
+                }
+
+                asteroids.removeAll(asteroidsToRemove);
+
                 bullets.removeIf(bullet -> {
                     if (!bullet.isAlive()) {
                         gamePane.getChildren().remove(bullet);
@@ -152,6 +164,7 @@ public class Main extends Application {
                 });
             }
         };
+
 
         timer.start();
 
@@ -175,11 +188,14 @@ public class Main extends Application {
                         bullets.add(bullet);
                         gamePane.getChildren().add(bullet);
                     }
-                break;
+                    break;
             }
         });
+
         primaryStage.show();
+
     }
+
     public static void main(String[] args) {
         launch(args);
     }

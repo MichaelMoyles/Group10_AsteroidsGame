@@ -1,13 +1,14 @@
-package com.example.asteroidgame;
+package asteroidsGame;
 
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.Pane;
@@ -17,12 +18,12 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import javafx.scene.control.Button;
 
 public class MainMenu {
     Scene mainPageScene;
 
     MainMenu(Stage primaryStage, Scene gameScene) {
-
         int width = (int) Screen.getPrimary().getBounds().getWidth();
         int height = (int) Screen.getPrimary().getBounds().getHeight();
 
@@ -37,7 +38,7 @@ public class MainMenu {
         highScoresPane.getChildren().add(new Label("highScores"));
 
         // create a label
-        Label gameName = new Label("ASTEROIDS");
+        Label gameName = new Label("ASTROIDS");
         gameName.setFont(Font.font("Lucida Sans Unicode", FontWeight.BOLD, 150));
         gameName.setTextFill(Color.WHITE);
 
@@ -147,3 +148,4 @@ public class MainMenu {
         return new Button[]{playGame, highScores};
     }
 }
+

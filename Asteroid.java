@@ -1,16 +1,17 @@
-package com.example.asteroidgame;
+package asteroidsGame;
 
 import javafx.geometry.Point2D;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Polygon;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.Shape;
 
 import java.util.Random;
 
-import static com.example.asteroidgame.Main.stageHeight;
-import static com.example.asteroidgame.Main.stageWidth;
+import static asteroidsGame.Main.stageHeight;
+import static asteroidsGame.Main.stageWidth;
 
-public class Asteroid {
+public class Asteroid extends Rectangle{
     public double speed;
     private Point2D movement; // the current movement vector of the player's ship
     public double rotation;
@@ -18,7 +19,6 @@ public class Asteroid {
     public int asteroidY;
     public double size;
     public Polygon asteroid; // the shape of the asteroid
-    public Ship other; // the ship we are colliding with
 
     public Asteroid(double size, double speed, int x, int y) {
         Random rnd = new Random();
@@ -36,10 +36,12 @@ public class Asteroid {
     }
 
     public Polygon getAsteroid() {
+
         return asteroid; // returns the shape of the asteroid to the scene we call it on
     }
 
     public double getSize() {
+
         return this.size;
     }
 
@@ -78,4 +80,10 @@ public class Asteroid {
         Shape collisionArea = Shape.intersect(this.asteroid, bullet.getHitbox());
         return collisionArea.getBoundsInLocal().getWidth() != -1;
     }
+
+    public Rectangle getHitbox() {
+
+        return new Rectangle(getTranslateX(), getTranslateY(), getWidth(), getHeight());
+    }
+
 }
