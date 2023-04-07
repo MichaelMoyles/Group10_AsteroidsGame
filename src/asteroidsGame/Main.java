@@ -73,7 +73,7 @@ public class Main extends Application {
         final Pane spacer = new Pane();
         HBox.setHgrow(spacer, Priority.ALWAYS);
         spacer.setMinSize(10, 1);
-//        pauseHBox.getChildren().addAll(spacer, pause);
+        pauseHBox.getChildren().addAll(spacer);
         pauseScene = new Scene(pauseHBox, stageWidth, stageHeight);
         // we create int positions X and Y that we will use to create our ship.
         // when we create a class for ship we call in an x and y position,
@@ -105,7 +105,6 @@ public class Main extends Application {
         Button closeGame = new Button("Close Game");
         Button restartGame = new Button("Restart Game");
 
-        buttonContainer.setSpacing(10);
         buttonContainer.getChildren().addAll(pauseSceneTit, mainMenu, resume, closeGame, restartGame);
 
         buttonContainer.setAlignment(Pos.CENTER); // Center the VBox
@@ -138,7 +137,6 @@ public class Main extends Application {
             primaryStage.setScene(gameScene);
             primaryStage.show();
         });
-        pause.setOnAction(e -> primaryStage.setScene(pauseScene));
 
         //Potential option for scene
         pause.setOnAction(e -> primaryStage.setScene(pauseScene));
