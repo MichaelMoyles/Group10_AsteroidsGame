@@ -43,6 +43,8 @@ public class MainMenu {
         Button backToPause = new Button("Back to Main Menu");
         backToPause.setOnAction(e -> primaryStage.setScene(mainPageScene));
 
+        playGamePane.getChildren().addAll(backToPause);
+
         InputnamePane.getChildren().add(new Label("Player"));
         ControlsPane.getChildren().add(new Label("Controls"));
         mainPagePane.setStyle("-fx-background-color: black");
@@ -55,7 +57,8 @@ public class MainMenu {
         gameName.setFont(Font.font("Lucida Sans Unicode", FontWeight.BOLD, 150));
         gameName.setTextFill(Color.WHITE);
 
-// create buttons
+        mainPageScene = new Scene(mainPagePane, width, height);
+        // create buttons
         Button[] buttons = generateButtons(mainPageScene);
         Button playGame = buttons[0];
         Button highScores = buttons[1];
@@ -99,7 +102,7 @@ public class MainMenu {
             OpeningPage.relocate(x, y);
         });
 
-        mainPageScene = new Scene(mainPagePane, width, height);
+
 
 
         // Create the VBox layout container just to center everything

@@ -55,7 +55,7 @@ public class Main extends Application {
 
         //Game Scene
         Button pause = new Button("Pause");
-        pause.setStyle("-fx-background-color: white;");
+//        pause.setStyle("-fx-background-color: white;");
         //So we are setting it to have a black colour
         Pane gamePane = new Pane();
         gamePane.setStyle("-fx-background-color: black;");
@@ -64,9 +64,7 @@ public class Main extends Application {
 //        pause.setTranslateY(20); // 20 is the margin from the top edge
         pause.setMinSize(Button.USE_PREF_SIZE, Button.USE_PREF_SIZE); //Creates the minimum size of the button
         //So this method is used to handle the pause button will call the scene change object
-        gamePane.getChildren().addAll(pause);
-        pause.setLayoutX(gamePane.getWidth() - 100);
-        pause.setLayoutY(20);
+        gamePane.getChildren().add(pause);
         pause.setOnAction(e -> primaryStage.setScene(pauseScene));
         gameScene = new Scene(gamePane, stageWidth, stageHeight);
         HBox pauseHBox = new HBox();
@@ -75,9 +73,7 @@ public class Main extends Application {
         final Pane spacer = new Pane();
         HBox.setHgrow(spacer, Priority.ALWAYS);
         spacer.setMinSize(10, 1);
-        pause.setMinSize(Button.USE_PREF_SIZE, Button.USE_PREF_SIZE);
-        pauseHBox.getChildren().addAll(spacer, pause);
-        pause.setOnAction(e -> primaryStage.setScene(pauseScene));
+//        pauseHBox.getChildren().addAll(spacer, pause);
         pauseScene = new Scene(pauseHBox, stageWidth, stageHeight);
         // we create int positions X and Y that we will use to create our ship.
         // when we create a class for ship we call in an x and y position,
