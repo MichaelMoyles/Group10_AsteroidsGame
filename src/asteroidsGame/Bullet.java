@@ -7,11 +7,11 @@ import javafx.scene.paint.Color;
 public class Bullet extends Rectangle {
     private Point2D velocity; // Bullet velocity
     private boolean isAlive = true; // Are the bullets still alive
-    public static int BULLET_WIDTH = 5; // Declare bullet width
+    public static int BULLET_WIDTH = 3; // Declare bullet width
 
     public Bullet(double x, double y, double direction) {
         setWidth(BULLET_WIDTH); // Bullet width
-        setHeight(5); // Bullet height
+        setHeight(3); // Bullet height
         setTranslateX(x); // x-coordinate of the bullet
         setTranslateY(y); // y-coordinate of the bullet
         setFill(Color.WHITE);
@@ -40,5 +40,3 @@ public class Bullet extends Rectangle {
         return isAlive;
     }
 }
-
-
