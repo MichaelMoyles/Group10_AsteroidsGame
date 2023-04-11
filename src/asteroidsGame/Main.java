@@ -78,10 +78,10 @@ public class Main extends Application {
 
         //Game Scene
         Button pause = new Button("Pause");
-        pause.setStyle("-fx-background-color: white;");
+        pause.setStyle(AppConstants.ButtonStyle.BUTTON_BG.getStyle());
          //So we are setting it to have a black colour
         gamePane = new Pane();
-        gamePane.setStyle("-fx-background-color: black;");
+        gamePane.setStyle(AppConstants.ButtonStyle.BACKGROUND.getStyle());
         // Should Set the position of the pause button!
 //        pause.setTranslateX(stageWidth - pause.getWidth() - 50); // 20 is the margin from the right edge
 //        pause.setTranslateY(20); // 20 is the margin from the top edge
@@ -157,12 +157,12 @@ public class Main extends Application {
         for (Node node : buttonContainer.getChildren()) {
             if (node instanceof Button) {
                 ((Button) node).setAlignment(Pos.CENTER);
-                ((Button) node).setStyle("-fx-font-size: 16pt; -fx-pref-width: 200px;");
+                ((Button) node).setStyle(AppConstants.ButtonStyle.BUTTON_NODE.getStyle());
             }
         }
 
         Pane pausePane = new Pane();
-        pausePane.setStyle("-fx-background-color: black;");
+        pausePane.setStyle(AppConstants.ButtonStyle.BACKGROUND.getStyle());
         pausePane.getChildren().addAll(buttonContainer);
         pauseSceneTit.setTextFill(Color.WHITE);
         pauseScene=new Scene(pausePane, stageWidth, stageHeight);
@@ -204,7 +204,7 @@ public class Main extends Application {
 
         InputNames.getChildren().addAll(name,submitbutton, restartGame);
         InputNames.setAlignment(Pos.CENTER); // Center the VBox
-        InputNames.setStyle("-fx-background-color: black");
+        InputNames.setStyle(AppConstants.ButtonStyle.BACKGROUND.getStyle());
         Scene Inputname = new Scene(InputNames,stageWidth, stageHeight);
 
         resume.setOnAction(e -> primaryStage.setScene(gameScene));
@@ -235,7 +235,7 @@ public class Main extends Application {
         VBox ControlDescription = new VBox();
         ControlDescription.setPadding(new Insets(10, 10, 10, 10));
         ControlDescription.setSpacing(10);
-        ControlDescription.setStyle("-fx-background-color: black");
+        ControlDescription.setStyle(AppConstants.ButtonStyle.BACKGROUND.getStyle());
         Label header=new Label("Description of Controls");
         header.setTextFill(Color.WHITE);
         Font myFont=new Font("Arial",30);

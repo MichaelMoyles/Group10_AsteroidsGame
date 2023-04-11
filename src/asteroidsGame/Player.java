@@ -1,14 +1,7 @@
 package asteroidsGame;
 
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Line;
 import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Shape;
-import javafx.util.Duration;
-import java.util.ArrayList;
-import java.util.Random;
 
 public class Player extends BaseShip {
 
@@ -26,11 +19,11 @@ public class Player extends BaseShip {
     private static Polygon createPlayerPolygon() {
         // create the polygon shape for the player's ship
         playerPolygon = new Polygon(-10, -10, 20, 0, -10, 10);
-        playerPolygon.setFill(Color.BLACK);
+        playerPolygon.setFill(AppConstants.AppColor.BACKGROUND.getColor());
         playerPolygon.setRotate(-90);
 
         // set the border and border color
-        playerPolygon.setStroke(Color.WHITE);
+        playerPolygon.setStroke(AppConstants.AppColor.SHAPE.getColor());
         playerPolygon.setStrokeWidth(2);
 
         return playerPolygon;

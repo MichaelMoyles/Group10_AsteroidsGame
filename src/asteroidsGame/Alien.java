@@ -2,9 +2,7 @@ package asteroidsGame;
 
 import javafx.geometry.Point2D;
 import javafx.scene.shape.Polygon;
-import javafx.scene.paint.Color;
 import javafx.scene.shape.Shape;
-import static java.lang.System.currentTimeMillis;
 
 
 public class Alien extends BaseShip {
@@ -34,7 +32,7 @@ public class Alien extends BaseShip {
         );
 
         polygon.setRotate(45);
-        polygon.setFill(Color.WHITE);
+        polygon.setFill(AppConstants.AppColor.SHAPE.getColor());
         return polygon;
     }
 
