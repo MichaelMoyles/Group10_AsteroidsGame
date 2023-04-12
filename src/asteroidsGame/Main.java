@@ -90,7 +90,7 @@ public class Main extends Application {
         //This is for the points
         Label pointsLabel = new Label("Points: 0");
         pointsLabel.setFont(Font.font("Lucida Sans Unicode", FontWeight.BOLD, 45));
-        pointsLabel.setTextFill(Color.WHITE);
+        pointsLabel.setTextFill(AppConstants.AppColor.SHAPE.getColor());
 
         VBox pointcard = new VBox();
         Region region = new Region();
@@ -117,7 +117,7 @@ public class Main extends Application {
 
         Label livesLabel = new Label("Lives: " + player.getLives());
         livesLabel.setFont(Font.font("Lucida Sans Unicode", FontWeight.BOLD, 45));
-        livesLabel.setTextFill(Color.WHITE);
+        livesLabel.setTextFill(AppConstants.AppColor.SHAPE.getColor());
         livesLabel.setLayoutX(100);
         livesLabel.setLayoutY(20);
         HBox hBox1 = new HBox(livesLabel, region1);
@@ -164,7 +164,7 @@ public class Main extends Application {
         Pane pausePane = new Pane();
         pausePane.setStyle(AppConstants.ButtonStyle.BACKGROUND.getStyle());
         pausePane.getChildren().addAll(buttonContainer);
-        pauseSceneTit.setTextFill(Color.WHITE);
+        pauseSceneTit.setTextFill(AppConstants.AppColor.SHAPE.getColor());
         pauseScene = new Scene(pausePane, stageWidth, stageHeight);
 
         buttonContainer.layoutBoundsProperty().addListener((obs, oldVal, newVal) -> {
@@ -237,7 +237,7 @@ public class Main extends Application {
         ControlDescription.setSpacing(10);
         ControlDescription.setStyle(AppConstants.ButtonStyle.BACKGROUND.getStyle());
         Label header = new Label("Description of Controls");
-        header.setTextFill(Color.WHITE);
+        header.setTextFill(AppConstants.AppColor.SHAPE.getColor());
         Font myFont = new Font("Arial", 30);
         header.setFont(myFont);
         header.setUnderline(true);
@@ -251,7 +251,7 @@ public class Main extends Application {
                 "Press Z to shoot your bullets \n");
 //       paragraph.setWrapText(true);
         // Add the label to the VBox
-        paragraph.setTextFill(Color.WHITE);
+        paragraph.setTextFill(AppConstants.AppColor.SHAPE.getColor());
         Button BackGame = new Button("Back to Game");
         ControlDescription.getChildren().addAll(paragraph, BackGame);
         ControlDescription.setAlignment(Pos.CENTER);

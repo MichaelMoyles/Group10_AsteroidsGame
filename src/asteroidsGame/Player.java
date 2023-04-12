@@ -53,6 +53,9 @@ public class Player extends BaseShip {
             if (isCrash) {
                 isAlive = false;
                 lives -= 1;
+                if (lives<0) {
+                    lives = 0;
+                }
             }
             return isCrash;
         }
