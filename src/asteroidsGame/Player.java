@@ -10,6 +10,16 @@ public class Player extends BaseShip {
     private static Polygon playerPolygon;
     boolean isAlive;
     Main gamepane;
+
+    public int getLives() {
+        return lives;
+    }
+
+    public void setLives(int lives) {
+        this.lives = lives;
+    }
+
+    private int lives=3;
     public Player(int x, int y) {
         super(createPlayerPolygon(), x, y);
         isAlive = true;
@@ -42,6 +52,7 @@ public class Player extends BaseShip {
             boolean isCrash = collisionArea.getBoundsInLocal().getWidth() != -1;
             if (isCrash) {
                 isAlive = false;
+                lives -= 1;
             }
             return isCrash;
         }

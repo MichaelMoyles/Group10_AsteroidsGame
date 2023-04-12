@@ -52,7 +52,7 @@ public class Main extends Application {
     Boolean alienAdded = false;
 
 //lives
-    private int lives=3;
+//    private int lives=3;
 
     private final AtomicInteger points = new AtomicInteger(0);
     @Override
@@ -79,7 +79,7 @@ public class Main extends Application {
         //Game Scene
         Button pause = new Button("Pause");
         pause.setStyle(AppConstants.ButtonStyle.BUTTON_BG.getStyle());
-         //So we are setting it to have a black colour
+        //So we are setting it to have a black colour
         gamePane = new Pane();
         gamePane.setStyle(AppConstants.ButtonStyle.BACKGROUND.getStyle());
         // Should Set the position of the pause button!
@@ -87,23 +87,35 @@ public class Main extends Application {
 //        pause.setTranslateY(20); // 20 is the margin from the top edge
         pause.setMinSize(Button.USE_PREF_SIZE, Button.USE_PREF_SIZE); //Creates the minimum size of the button
         //So this method is used to handle the pause button will call the scene change object
-       //This is for the points
+        //This is for the points
         Label pointsLabel = new Label("Points: 0");
         pointsLabel.setFont(Font.font("Lucida Sans Unicode", FontWeight.BOLD, 45));
         pointsLabel.setTextFill(Color.WHITE);
 
-        VBox pointcard=new VBox();
+        VBox pointcard = new VBox();
         Region region = new Region();
         HBox.setHgrow(region, javafx.scene.layout.Priority.ALWAYS);
         HBox hBox = new HBox(pointsLabel, region);
         pointcard.getChildren().add(hBox);
         pointcard.setAlignment(Pos.CENTER_LEFT);
 
-        VBox Livescard=new VBox();
-        Region region1=new Region();
+        VBox Livescard = new VBox();
+        Region region1 = new Region();
         HBox.setHgrow(region1, javafx.scene.layout.Priority.ALWAYS);
 
-        Label livesLabel = new Label("Lives: " + lives);
+        // we create int positions X and Y that we will use to create our ship.
+        // when we create a class for ship we call in an x and y position,
+        // by default these positions are going to be dead in the center.
+
+        int playerX, playerY;
+        playerX = (int) (stageWidth / 2);
+        playerY = (int) (stageHeight / 2);
+
+        // Instantiating a Player called player that we can manipulate and adding it to the game scene.
+        Player player = new Player(playerX, playerY);
+        gamePane.getChildren().add(player.getCharacter());
+
+        Label livesLabel = new Label("Lives: " + player.getLives());
         livesLabel.setFont(Font.font("Lucida Sans Unicode", FontWeight.BOLD, 45));
         livesLabel.setTextFill(Color.WHITE);
         livesLabel.setLayoutX(100);
@@ -115,22 +127,10 @@ public class Main extends Application {
         borderPane.setTop(pointcard);
         borderPane.setBottom(Livescard);
 
-        gamePane.getChildren().addAll(pause,borderPane);
+        gamePane.getChildren().addAll(pause, borderPane);
         gameScene = new Scene(gamePane, stageWidth, stageHeight);
         pause.setLayoutX(gamePane.getWidth() - 100);
         pause.setLayoutY(20);
-
-        // we create int positions X and Y that we will use to create our ship.
-        // when we create a class for ship we call in an x and y position,
-        // by default these positions are going to be dead in the center.
-
-        int playerX, playerY;
-        playerX = (int)(stageWidth/2);
-        playerY = (int)(stageHeight/2);
-
-        // Instantiating a Player called player that we can manipulate and adding it to the game scene.
-        Player player = new Player(playerX,playerY);
-        gamePane.getChildren().add(player.getCharacter());
 
         // create an instance of Asteroid class
         initAstroids(playerX, playerY);
@@ -143,13 +143,13 @@ public class Main extends Application {
         Button resume = new Button("Resume");
         Button mainMenu = new Button("Main Menu");
         Button closeGame = new Button("Close Game");
-        Button restartName=new Button("Restart with Name");
+        Button restartName = new Button("Restart with Name");
         Button restartGame = new Button("Restart Game");
-        Button controls=new Button("Controls");
+        Button controls = new Button("Controls");
 
         buttonContainer.setSpacing(10); // Set the spacing between buttons
         buttonContainer.setAlignment(Pos.CENTER);
-        buttonContainer.getChildren().addAll(pauseSceneTit,mainMenu,resume,closeGame,restartName,controls);
+        buttonContainer.getChildren().addAll(pauseSceneTit, mainMenu, resume, closeGame, restartName, controls);
 
 // set the alignment of the VBox and the buttons
         //Center it within the VBbox
@@ -165,7 +165,7 @@ public class Main extends Application {
         pausePane.setStyle(AppConstants.ButtonStyle.BACKGROUND.getStyle());
         pausePane.getChildren().addAll(buttonContainer);
         pauseSceneTit.setTextFill(Color.WHITE);
-        pauseScene=new Scene(pausePane, stageWidth, stageHeight);
+        pauseScene = new Scene(pausePane, stageWidth, stageHeight);
 
         buttonContainer.layoutBoundsProperty().addListener((obs, oldVal, newVal) -> {
             double x = (pausePane.getWidth() - newVal.getWidth()) / 2;
@@ -199,18 +199,18 @@ public class Main extends Application {
         name.setPrefWidth(50);
         name.setEditable(true);
         //This creates a button to submit the name to the leaderboard
-        Button submitbutton=new Button("Submit");
+        Button submitbutton = new Button("Submit");
 
 
-        InputNames.getChildren().addAll(name,submitbutton, restartGame);
+        InputNames.getChildren().addAll(name, submitbutton, restartGame);
         InputNames.setAlignment(Pos.CENTER); // Center the VBox
         InputNames.setStyle(AppConstants.ButtonStyle.BACKGROUND.getStyle());
-        Scene Inputname = new Scene(InputNames,stageWidth, stageHeight);
+        Scene Inputname = new Scene(InputNames, stageWidth, stageHeight);
 
         resume.setOnAction(e -> primaryStage.setScene(gameScene));
         closeGame.setOnAction(event -> primaryStage.close());
         //This is for restarting with name
-        restartName.setOnAction(event->{
+        restartName.setOnAction(event -> {
             String playerName = name.getText();
             //scoresList.add(playerName);
             primaryStage.setScene(Inputname);
@@ -221,14 +221,14 @@ public class Main extends Application {
 
     });
         //This will just restart the game
-        restartGame.setOnAction(event ->   {
+        restartGame.setOnAction(event -> {
             player.resetPosition();
             primaryStage.setScene(gameScene);
             primaryStage.show();
         });
 
-        Pane InputnamePane=new Pane();
-        Pane ControlsPane=new Pane();
+        Pane InputnamePane = new Pane();
+        Pane ControlsPane = new Pane();
         InputnamePane.getChildren().add(new Label("Player"));
         ControlsPane.getChildren().add(new Label("Controls"));
 
@@ -236,9 +236,9 @@ public class Main extends Application {
         ControlDescription.setPadding(new Insets(10, 10, 10, 10));
         ControlDescription.setSpacing(10);
         ControlDescription.setStyle(AppConstants.ButtonStyle.BACKGROUND.getStyle());
-        Label header=new Label("Description of Controls");
+        Label header = new Label("Description of Controls");
         header.setTextFill(Color.WHITE);
-        Font myFont=new Font("Arial",30);
+        Font myFont = new Font("Arial", 30);
         header.setFont(myFont);
         header.setUnderline(true);
         ControlDescription.getChildren().add(header);
@@ -253,7 +253,7 @@ public class Main extends Application {
         // Add the label to the VBox
         paragraph.setTextFill(Color.WHITE);
         Button BackGame = new Button("Back to Game");
-        ControlDescription.getChildren().addAll(paragraph,BackGame);
+        ControlDescription.getChildren().addAll(paragraph, BackGame);
         ControlDescription.setAlignment(Pos.CENTER);
         // Create a scene and add the VBox to it
         Scene ControlsScene = new Scene(ControlDescription, 400, 200);
@@ -263,7 +263,7 @@ public class Main extends Application {
         controls.setOnAction(e -> primaryStage.setScene(ControlsScene));
         pause.setOnAction(e -> primaryStage.setScene(pauseScene));
 
-        mainMenu.setOnAction(e -> new MainMenu(primaryStage,gameScene));
+        mainMenu.setOnAction(e -> new MainMenu(primaryStage, gameScene));
 
         new MainMenu(primaryStage, gameScene);
 
@@ -273,10 +273,10 @@ public class Main extends Application {
 
                 //creates an alien every 8 seconds
                 long currentTime = System.nanoTime();
-                if(!alienAdded && currentTime - lastAlienBirth > 8000L * 1000000 && player.isAlive) {
+                if (!alienAdded && currentTime - lastAlienBirth > 8000L * 1000000 && player.isAlive) {
                     Random random_pos = new Random();
-                    int appearWidth = (int)stageWidth;
-                    int appearHeight = (int)stageHeight;
+                    int appearWidth = (int) stageWidth;
+                    int appearHeight = (int) stageHeight;
                     System.out.println(appearWidth);
                     System.out.println(appearHeight);
                     alien = initAliens(random_pos.nextInt(appearWidth), random_pos.nextInt(appearHeight));
@@ -297,6 +297,8 @@ public class Main extends Application {
 
                             gamePane.getChildren().remove(player.getCharacter());
                             gamePane.getChildren().addAll(player.splitBaseShipPolygon());
+                            player.resetPosition();
+                            gamePane.getChildren().addAll(player.getCharacter());
                         }
                         if (player.crash(asteroid) && asteroid.getSize() < 30) {
                             gamePane.getChildren().remove(asteroid.getAsteroid());
@@ -340,11 +342,9 @@ public class Main extends Application {
                             // split the hit asteroid into two smaller asteroids if it's big or medium
                             if (asteroid.getSize() >= 30) {
 
-                                if(asteroid.getSize() >=60){
+                                if (asteroid.getSize() >= 60) {
                                     points.addAndGet(100);
-                                }
-
-                                else if(asteroid.getSize() >30 && asteroid.getSize() < 60){
+                                } else if (asteroid.getSize() > 30 && asteroid.getSize() < 60) {
                                     points.addAndGet(50);
                                 }
                                 Asteroid asteroid1 = new Asteroid((int) newSize, asteroid.increaseSpeedOnDestruction(), asteroid.getCurrentAsteroidX(), asteroid.getCurrentAsteroidY());
@@ -370,20 +370,20 @@ public class Main extends Application {
                     asteroids.removeAll(asteroidsToRemove);
 
                     //if there is an alien on screen & it collides with a player's bullet
-                        if (alienAdded && alien.collide(bullet) && bullet.shooter == "playerBullet" && player.isAlive) {
-                            gamePane.getChildren().removeAll(alien.getCharacter(), bullet);
-                            gamePane.getChildren().addAll(alien.splitBaseShipPolygon());
-                            bulletsToRemove.add(bullet);
-                            points.addAndGet(500);
-                            alienAdded = false;
-                        }
-
-                        // WIP if a player collides with a bullet player is declared dead -- for testing
-                        if (player.collide(bullet) && bullet.shooter == "alienBullet" && player.isAlive) {
-                            gamePane.getChildren().addAll(alien.splitBaseShipPolygon());
-                            System.out.println("Player Dead");
-                        }
+                    if (alienAdded && alien.collide(bullet) && bullet.shooter == "playerBullet" && player.isAlive) {
+                        gamePane.getChildren().removeAll(alien.getCharacter(), bullet);
+                        gamePane.getChildren().addAll(alien.splitBaseShipPolygon());
+                        bulletsToRemove.add(bullet);
+                        points.addAndGet(500);
+                        alienAdded = false;
                     }
+
+                    // WIP if a player collides with a bullet player is declared dead -- for testing
+                    if (player.collide(bullet) && bullet.shooter == "alienBullet" && player.isAlive) {
+                        gamePane.getChildren().addAll(alien.splitBaseShipPolygon());
+                        System.out.println("Player Dead");
+                    }
+                }
 
 
 //
@@ -392,11 +392,13 @@ public class Main extends Application {
 //                    gameScene.Restarting();
 //                }
 
-                if (points.get()>10000) {
-                lives+=1;
-                if (lives>5){
-                    lives=5;
-                }
+                if (points.get() > 10000) {
+                    int playerAddLives = player.getLives();
+                    playerAddLives += 1;
+                    player.setLives(playerAddLives);
+                    if (player.getLives() > 5) {
+                        player.setLives(5);
+                    }
                 }
                 asteroids.removeAll(asteroidsToRemove);
 
@@ -417,7 +419,7 @@ public class Main extends Application {
                     }
                 }
                 pointsLabel.setText("Points: " + points.get());
-                livesLabel.setText("Lives: " + lives);
+                livesLabel.setText("Lives: " + player.getLives());
             }
         };
 
