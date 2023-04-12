@@ -225,6 +225,8 @@ public class Main extends Application {
         //This will just restart the game
         restartGame.setOnAction(event -> {
             player.resetPosition();
+            points.set(0);
+            player.setLives(3);
             primaryStage.setScene(gameScene);
             primaryStage.show();
         });
@@ -284,6 +286,7 @@ public class Main extends Application {
                     restartGame.setOnAction(event -> {
                         player.resetPosition();
                         player.setLives(3);
+                        points.set(0);
                         primaryStage.setScene(gameScene);
                         primaryStage.show();
                     });
