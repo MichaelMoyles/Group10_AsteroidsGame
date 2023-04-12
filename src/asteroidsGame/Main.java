@@ -55,6 +55,7 @@ public class Main extends Application {
 //    private int lives=3;
 
     private final AtomicInteger points = new AtomicInteger(0);
+
     @Override
     public void start(Stage primaryStage) {
 
@@ -134,6 +135,7 @@ public class Main extends Application {
 
         // create an instance of Asteroid class
         initAstroids(playerX, playerY);
+
         // Create the VBox layout container just to center everything
         VBox buttonContainer = new VBox();
         //Pause Scene
@@ -219,7 +221,7 @@ public class Main extends Application {
             Recorder.addHighScore(playerName, points);
             Recorder.saveHighScores();
 
-    });
+        });
         //This will just restart the game
         restartGame.setOnAction(event -> {
             player.resetPosition();
@@ -271,6 +273,23 @@ public class Main extends Application {
             @Override
             public void handle(long now) {
 
+                if(player.getLives() == 0) {
+                        String playerName = name.getText();
+                        primaryStage.setScene(Inputname);
+
+                        //Record and save player scores
+                        Recorder.addHighScore(playerName, points);
+                        Recorder.saveHighScores();
+
+                    restartGame.setOnAction(event -> {
+                        player.resetPosition();
+                        player.setLives(3);
+                        primaryStage.setScene(gameScene);
+                        primaryStage.show();
+                    });
+
+//                    });
+                }
                 //creates an alien every 8 seconds
                 long currentTime = System.nanoTime();
                 if (!alienAdded && currentTime - lastAlienBirth > 8000L * 1000000 && player.isAlive) {
@@ -290,27 +309,27 @@ public class Main extends Application {
                     alien.move();
                 }
 
-                if (player.isAlive) {
-                    asteroids.forEach(asteroid -> {
-                        asteroid.move();
-                        if (player.crash(asteroid) && asteroid.getSize() >= 30) {
 
-                            gamePane.getChildren().remove(player.getCharacter());
-                            gamePane.getChildren().addAll(player.splitBaseShipPolygon());
-                            player.resetPosition();
-                            gamePane.getChildren().addAll(player.getCharacter());
-                        }
-                        if (player.crash(asteroid) && asteroid.getSize() < 30) {
-                            gamePane.getChildren().remove(asteroid.getAsteroid());
-                        }
-                        //if alien is on screen and it crashes into an asteroid, it's removed
-                        if (alienAdded && alien.crash(asteroid)) {
-                            gamePane.getChildren().remove(alien.getCharacter());
-                            gamePane.getChildren().addAll(alien.splitBaseShipPolygon());
-                            alienAdded = false;
-                        }
-                    });
-                }
+                asteroids.forEach(asteroid -> {
+                    asteroid.move();
+                    if (player.crash(asteroid) && asteroid.getSize() >= 30) {
+
+                        gamePane.getChildren().remove(player.getCharacter());
+                        gamePane.getChildren().addAll(player.splitBaseShipPolygon());
+                        player.resetPosition();
+                        player.setInvincibilityTimer(2);
+                        gamePane.getChildren().addAll(player.getCharacter());
+                    }
+                    if (player.crash(asteroid) && asteroid.getSize() < 30) {
+                        gamePane.getChildren().remove(asteroid.getAsteroid());
+                    }
+                    //if alien is on screen and it crashes into an asteroid, it's removed
+                    if (alienAdded && alien.crash(asteroid)) {
+                        gamePane.getChildren().remove(alien.getCharacter());
+                        gamePane.getChildren().addAll(alien.splitBaseShipPolygon());
+                        alienAdded = false;
+                    }
+                });
 
 
                 // Getting null pointers if we remove the items from the array completely
@@ -384,8 +403,6 @@ public class Main extends Application {
                         System.out.println("Player Dead");
                     }
                 }
-
-
 //
 //                if (lives<0){
 //                    gameScene.Stoping();

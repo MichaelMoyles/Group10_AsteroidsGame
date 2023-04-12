@@ -5,3 +5,2193 @@ Players name,500
 Players name222222,500
 Players name999,500
 Players name,400
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+xPlayers name,0
+xPlayers name,0
+xPlayers name,0
+xPlayers name,0
+xPlayers name,0
+xPlayers name,0
+xPlayers name,0
+xPlayers name,0
+xPlayers name,0
+xPlayers name,0
+xPlayers name,0
+xPlayers name,0
+xPlayers name,0
+xPlayers name,0
+xxPlayers name,0
+xxPlayers name,0
+xxPlayers name,0
+xxPlayers name,0
+xxPlayers name,0
+xxPlayers name,0
+xxPlayers name,0
+xxPlayers name,0
+xxPlayers name,0
+xxPlayers name,0
+xxxPlayers name,0
+xxxPlayers name,0
+xxxPlayers name,0
+xxxPlayers name,0
+xxxPlayers name,0
+xxxPlayers name,0
+xxxPlayers name,0
+xxxPlayers name,0
+xxxPlayers name,0
+xxxPlayers name,0
+xxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+xxxxPlayers name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+Players name,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+x,0
+x,0
+x,0
+x,0
+x,0
+x,0
+x,0
+x,0
+x,0
+x,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+xx,0
+x,0
+x,0
+x,0
+x,0
+x,0
+x,0
+x,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
+z,0
