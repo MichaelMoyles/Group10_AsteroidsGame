@@ -30,8 +30,7 @@ public class AnimationController extends AnimationTimer {
     public AnimationController(
             Player player,
             Stage primaryStage,
-            GameOverScene gameOverScene
-    ) {
+            GameOverScene gameOverScene) {
         this.player = player;
         this.primaryStage = primaryStage;
         this.gameOverScene = gameOverScene;

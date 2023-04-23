@@ -100,7 +100,7 @@ public class Asteroid extends Rectangle{
     public Polygon createAsteroid(double size) {
         Random rnd = new Random();
 
-        // Generate a random number of sides between 12-20
+        // Generate a random number of sides between 7-12
         int sides = rnd.nextInt(5) + 7;
 
         // Calculate the angle between each side of the polygon

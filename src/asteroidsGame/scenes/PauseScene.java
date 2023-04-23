@@ -59,7 +59,7 @@ public class PauseScene extends Scene {
         });
 
         closeGame.setOnAction(event -> {
-            //This closes the whole game!!! As in exits the whole javafx
+            //This closes the whole game!!! As in like exits the whole javafx
             Platform.exit();
             System.exit(0);
         });
