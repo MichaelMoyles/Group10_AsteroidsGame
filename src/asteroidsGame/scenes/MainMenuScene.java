@@ -121,6 +121,8 @@ public class MainMenuScene {
         primaryStage.show();
     }
 
+
+    //////////////////////////////////
     //Generate leaderboard Scene
     private Scene generateLeaderBoardScene() {
         // Leaderboard title
@@ -148,21 +150,26 @@ public class MainMenuScene {
         // Create a name column
         TableColumn<HighScoreRecorder.HighScoreEntry, String> column1 = new TableColumn<>("Name");
         column1.setCellValueFactory(new PropertyValueFactory<>("name"));
+        // Set up a custom cell factory for column1
         column1.setCellFactory(column -> new TableCell<>() {
             @Override
             protected void updateItem(String item, boolean empty) {
                 super.updateItem(item, empty);
+                // If the cell is empty
                 if (item == null || empty) {
                     setText(null);
                     setAlignment(Pos.CENTER); // Set alignment to the center
                 } else {
+                    // Set the text to the value of the item
                     setText(item);
                     setAlignment(Pos.CENTER); // Set alignment to the center
                 }
             }
         });
 
+        //column2 is used to display the score
         TableColumn<HighScoreRecorder.HighScoreEntry, Integer> column2 = new TableColumn<>("Scores");
+        // Set the cell value factory for column2 to get the value of the score property of the HighScoreEntry object
         column2.setCellValueFactory(new PropertyValueFactory<>("score"));
         column2.setCellFactory(column -> new TableCell<>() {
             @Override
@@ -178,14 +185,18 @@ public class MainMenuScene {
             }
         });
 
+        // Add column1 and column2 to the leaderboardTable's collection of columns
         leaderboardTable.getColumns().add(column1);
         leaderboardTable.getColumns().add(column2);
 
+        // Add high score records to the leaderboardTable's data collection
         leaderboardTable.getItems().addAll(HighScoreRecorder.getRecorder().getHighScores());
         leaderboardTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         leaderboardTable.setPrefWidth(50);
         return leaderboardTable;
     }
+
+
 
     private void initElementsPosition(Label gameName, Button playGame, Button highScores, Button info) {
         playGame.setLayoutY(STAGE_HEIGHT / 3f + 100);

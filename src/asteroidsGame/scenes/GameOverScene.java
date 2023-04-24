@@ -55,6 +55,7 @@ public class GameOverScene extends Scene {
 
         submitButton.setOnAction(event -> {
             HScore.setText("Points"+points.get());
+
             // Record and save player scores
             HighScoreRecorder.getRecorder().addHighScore(name.getText(), points);
             primaryStage.setScene(MainMenuScene.mainPageScene);
