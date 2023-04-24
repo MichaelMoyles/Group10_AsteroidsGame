@@ -94,10 +94,12 @@ public class MainMenuScene {
 
         info.setOnAction(e -> primaryStage.setScene(ControlsScene));
 
-
+        // Adding buttons to the main menu panel
         mainMenuPane.getChildren().addAll(buttons);
 
+        // Set up event handlers
         playGame.setOnAction(e -> {
+            // Switching scenes to game scenes
             primaryStage.setScene(gameScene);
 
             timer.startWithNewTime();
@@ -107,36 +109,43 @@ public class MainMenuScene {
             new AePlayWave("src/start.wav").start();
         });
 
+        // Set event handler for highScores button to display leaderboard
         highScores.setOnAction(e -> {
             primaryStage.setScene(generateLeaderBoardScene());
         });
 
+        // Initialize element positions, centered elements
         initElementsPosition(gameName, playGame, highScores, info);
         centerElements(gameName, playGame, highScores, info);
-
 
         primaryStage.show();
     }
 
+    //Generate leaderboard Scene
     private Scene generateLeaderBoardScene() {
+        // Leaderboard title
         Label leaderboardTitle = new Label("Leaderboard");
+        // Leaderboard table
         TableView leaderBoardTableView = generateLeaderBoardTableView();
 
-
+        // Set the title font and colour
         leaderboardTitle.setFont(Font.font("Lucida Sans Unicode", FontWeight.BOLD, 45));
         leaderboardTitle.setTextFill(AppConstants.AppColor.SHAPE.getColor());
 
-
+        // Create a leaderboard layout
         VBox leaderboardLayout = new VBox(10);
         leaderboardLayout.getChildren().addAll(leaderboardTitle, leaderBoardTableView, backToPause);
+        // Centered alignment
         leaderboardLayout.setAlignment(Pos.CENTER);
         leaderboardLayout.setStyle(AppConstants.ButtonStyle.BACKGROUND.getStyle());
         return new Scene(leaderboardLayout, STAGE_WIDTH, STAGE_HEIGHT);
     }
 
+    // Generate leaderboard tables
     private TableView generateLeaderBoardTableView() {
         TableView leaderboardTable = new TableView();
 
+        // Create a name column
         TableColumn<HighScoreRecorder.HighScoreEntry, String> column1 = new TableColumn<>("Name");
         column1.setCellValueFactory(new PropertyValueFactory<>("name"));
         column1.setCellFactory(column -> new TableCell<>() {

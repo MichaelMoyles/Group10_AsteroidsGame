@@ -6,15 +6,20 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-
+//High Score Recorder
 public class HighScoreRecorder {
+    //Single instance of a class
     private static HighScoreRecorder INSTANCE;
+    //Store a list of high scores
     private List<HighScoreEntry> highScores = new ArrayList<>();
     private final String recordFile = "highScores.txt";
 
+    //ensure only one instance
     private HighScoreRecorder() {
     }
 
+    // Get a single instance of the high score recorder,
+    // or create one if it doesn't exist
     public static HighScoreRecorder getRecorder() {
         if (INSTANCE == null) {
             INSTANCE = new HighScoreRecorder();
@@ -81,7 +86,9 @@ public class HighScoreRecorder {
     }
 
     // Class to represent a high score entry
-    public class HighScoreEntry implements Comparable<HighScoreEntry> {
+    public class
+
+    HighScoreEntry implements Comparable<HighScoreEntry> {
         private String name; // Player name
         private int score; // Player score
 

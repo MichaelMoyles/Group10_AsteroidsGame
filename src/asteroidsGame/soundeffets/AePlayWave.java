@@ -16,7 +16,7 @@ public class AePlayWave extends Thread {
     }
 
     public void run() {
-    //When the thread is started, the run method will be called. Here the audio playback is done
+    //When the thread is started, the run method will be called.
 
         //Reading audio files
         File soundFile = new File(filename);
@@ -54,7 +54,7 @@ public class AePlayWave extends Thread {
             }
         } catch (IOException e) {
             e.printStackTrace();
-            return;
+
         } finally {
             auline.drain();
             auline.close();
