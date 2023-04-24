@@ -5,6 +5,7 @@ import asteroidsGame.controllers.AnimationController;
 import asteroidsGame.flyingobjects.Bullet;
 import asteroidsGame.flyingobjects.Player;
 import asteroidsGame.soundeffets.AePlayWave;
+import javafx.beans.binding.When;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -35,6 +36,7 @@ public class GamePlayScene extends Scene {
     public static Label levelLabel;
     public static Pane gamePane = new Pane();
     private ToggleButton pause;
+
     //Used to store the currently pressed key and is a collection that does not allow duplicate elements
     Set<KeyCode> pressedKeys = new HashSet<>();
 
@@ -114,6 +116,8 @@ public class GamePlayScene extends Scene {
         });
     }
 
+
+    //When a key is pressed, the KeyCode of the key is added to the set of pressedKeys
     private void addEventFilterToScene(Player player) {
         //Adding event filters to game scenes for handling key press events
         gameScene.addEventFilter(KeyEvent.KEY_PRESSED, event -> {

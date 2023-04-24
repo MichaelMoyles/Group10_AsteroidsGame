@@ -53,6 +53,7 @@ public class GameOverScene extends Scene {
         gameOverVbox.setAlignment(Pos.CENTER); // Center the VBox
         gameOverVbox.setStyle(AppConstants.ButtonStyle.BACKGROUND.getStyle());
 
+    ///////////////////////////
         submitButton.setOnAction(event -> {
             HScore.setText("Points"+points.get());
 

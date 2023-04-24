@@ -14,9 +14,9 @@ public class HighScoreRecorder {
     private List<HighScoreEntry> highScores = new ArrayList<>();
     private final String recordFile = "highScores.txt";
 
-    //ensure only one instance
-    private HighScoreRecorder() {
-    }
+//     ensure only one instance
+//    private HighScoreRecorder() {
+//    }
 
     // Get a single instance of the high score recorder,
     // or create one if it doesn't exist
@@ -27,6 +27,7 @@ public class HighScoreRecorder {
         INSTANCE.loadHighScores();
         return INSTANCE;
     }
+
 
     // Method to load high scores from file
     private void loadHighScores() {
@@ -57,8 +58,8 @@ public class HighScoreRecorder {
             e.printStackTrace();
         }
 
-        // Sort the high scores list in descending order
-        Collections.sort(highScores, Collections.reverseOrder());
+//        // Sort the high scores list in descending order
+//        Collections.sort(highScores, Collections.reverseOrder());
     }
 
     // Method to save high scores to the file
@@ -79,6 +80,8 @@ public class HighScoreRecorder {
         Collections.sort(highScores, Collections.reverseOrder());
         saveHighScores(); // Sort the high scores list in descending order
     }
+
+
 
     // Method to get the high scores list
     public List<HighScoreEntry> getHighScores() {
